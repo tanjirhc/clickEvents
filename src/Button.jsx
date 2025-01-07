@@ -1,6 +1,6 @@
 function Button(){
     
-    const handleClick = (e) => console.log("Hello", e);
+    const handleClick = (e) => e.target.textContent = 'Clicked';
 
     return <button onClick={(e) => handleClick(e)}>Click me</button>;
 }
